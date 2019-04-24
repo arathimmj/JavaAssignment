@@ -4,18 +4,23 @@ import java.io.InputStreamReader;
 public class AscNumAddandCheck {
     public static void main(String[] args) throws Exception {
 
-        int temp, max=0, i=0, j, temporary, finalNum=0, sum=0;
-
-
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
 
         System.out.println("Enter your number");
         int num = Integer.parseInt(br.readLine());
 
+        sortAndSum(num);
+
+    }
+
+    static void sortAndSum(int num) {
+
+        int max=0, i=0, j, temporary, finalNum=0, sum=0;
+
         int length = String.valueOf(num).length();
         int array[] = new int[length];
 
-        temp=num;
+
         while (num/10 != 0) {
             array[i] = num%10;
             num=num/10;
@@ -44,6 +49,5 @@ public class AscNumAddandCheck {
             System.out.println("True");
         else
             System.out.println("False");
-
     }
 }

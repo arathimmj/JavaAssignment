@@ -4,11 +4,13 @@ import java.io.InputStreamReader;
 public class VowelConsonant {
     public static void main(String[] args) throws Exception{
 
-        String output = "";
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter your string");
         String str = br.readLine();
 
+        checkVowelConsonant(str);
+    }
+    static void checkVowelConsonant(String str){
         int length = str.length();
 
         for (int i=0;i<length;i++){

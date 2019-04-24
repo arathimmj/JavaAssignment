@@ -9,6 +9,10 @@ public class CharacterCheck {
         System.out.println("Enter your character");
         char ch = br.readLine().charAt(0);
 
+        checkCharacter(ch);
+
+    }
+    static void checkCharacter(char ch) {
         if (Character.isLowerCase(ch)){
             System.out.println("Lower case letter");
         }

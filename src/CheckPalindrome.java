@@ -3,12 +3,17 @@ import java.io.InputStreamReader;
 
 public class CheckPalindrome {
     public static void main(String[] args) throws Exception {
-        boolean flag=false;
-        int sum = 0, temp, temp1, newnum = 0, op, op1;
 
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         System.out.println("Enter your number");
         int num = Integer.parseInt(br.readLine());
+
+        palindromeCheck(num);
+    }
+
+    static void palindromeCheck(int num) {
+
+        int sum = 0, temp, temp1, newnum = 0, op, op1;
 
         temp = num;
         while(num/10!= 0) {

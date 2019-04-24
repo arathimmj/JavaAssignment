@@ -14,13 +14,19 @@ public class GuessTheNumber {
         System.out.println("Guess the number");
         guess=Integer.parseInt(br.readLine());
 
-        while(guess!=num){
+        checkMatch(guess, num);
+    }
+    static  void checkMatch(int guess, int num) throws Exception{
+        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+        if (guess != num){
             if (guess>num)
                 System.out.println("The number guessed is more than the original number");
             else if (guess<num)
                 System.out.println("The number guessed is less than the original number");
             guess=Integer.parseInt(br.readLine());
+            checkMatch(guess, num);
         }
-        System.out.println("The number guessed matches the original number");
+        else
+            System.out.println("The number guessed matches the original number");
     }
 }

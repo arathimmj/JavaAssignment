@@ -13,6 +13,9 @@ public class StringInteger {
         System.out.println("Enter the number");
         int num = Integer.parseInt(br.readLine());
 
+        repeatString(str, num);
+    }
+    static void repeatString(String str, int num){
         int length = str.length();
 
         String addStr = str.substring(length-num,length);

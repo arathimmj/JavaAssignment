@@ -17,6 +17,7 @@ public class VowelConsonantTest {
 
     @After
     public void tearDown() throws Exception {
+        vowelConsonant = null;
     }
 
     @Test

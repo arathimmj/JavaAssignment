@@ -18,6 +18,7 @@ public class TomJerryTest {
 
     @After
     public void tearDown() throws Exception {
+        tomJerry = null;
     }
 
     @Test

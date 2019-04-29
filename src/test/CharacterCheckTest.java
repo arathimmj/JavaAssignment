@@ -1,6 +1,7 @@
 package test;
 
 import jv.CharacterCheck;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -13,6 +14,11 @@ public class CharacterCheckTest {
     @Before
     public void setUp(){
         characterCheck = new CharacterCheck();
+    }
+
+    @After
+    public void tearDown(){
+        characterCheck = null;
     }
 
     @Test

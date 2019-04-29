@@ -1,6 +1,7 @@
 package test;
 
 import jv.ReverseString;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Rule;
 import org.junit.Test;
@@ -15,6 +16,11 @@ public class ReverseStringTest {
     @Before
     public void setUp(){
         reverseString = new ReverseString();
+    }
+
+    @After
+    public void tearDown(){
+        reverseString = null;
     }
 
     @Test

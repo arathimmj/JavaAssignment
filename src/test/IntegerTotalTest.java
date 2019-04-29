@@ -18,6 +18,7 @@ public class IntegerTotalTest {
 
     @After
     public void tearDown() throws Exception {
+        integerTotal = null;
     }
 
     @Test

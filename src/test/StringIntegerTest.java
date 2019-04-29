@@ -1,6 +1,7 @@
 package test;
 
 import jv.StringInteger;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,6 +15,12 @@ public class StringIntegerTest {
     public void setUp(){
         stringInteger = new StringInteger();
     }
+
+    @After
+    public void tearDown(){
+        stringInteger = null;
+    }
+
     @Test
     public void repeatString() {
         String str = stringInteger.repeatString("StackRoute", 3);

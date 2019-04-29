@@ -17,6 +17,7 @@ public class GuessTheNumberTest {
 
     @After
     public void tearDown() throws Exception {
+        guessTheNumber = null;
     }
 
     @Test

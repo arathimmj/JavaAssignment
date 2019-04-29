@@ -1,6 +1,7 @@
 package test;
 
 import jv.PatternPrinting;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -14,6 +15,11 @@ public class PatternPrintingTest {
     @Before
     public void setUp(){
         patternPrinting = new PatternPrinting();
+    }
+
+    @After
+    public void tearDown(){
+        patternPrinting = null;
     }
 
     @Test

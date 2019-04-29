@@ -1,6 +1,7 @@
 package test;
 
 import jv.ascendingNumAddnCheck.*;
+import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
@@ -27,6 +28,16 @@ public class AscNumAddandCheckTest {
         arraySort = new ArraySort();
         numeralToArray = new NumeralToArray();
         arrayToNumeral = new ArrayToNumeral();
+    }
+
+    @After
+    public void tearDown(){
+        ascNumAddandCheck = null;
+        expectedResult = null;
+        result = null;
+        arraySort = null;
+        numeralToArray = null;
+        arrayToNumeral = null;
     }
     @Test
     public void ascNumAddAndCheckTestLessThan15() {

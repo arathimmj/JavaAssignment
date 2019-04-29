@@ -2,6 +2,7 @@ package test;
 
 import jv.palindrome.CheckEven;
 import jv.palindrome.EvenDigitSum;
+import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;
 
@@ -20,6 +21,13 @@ public class CheckPalindromeTest {
         checkPalindrome = new CheckPalindrome();
         checkEven = new CheckEven();
         evenDigitSum = new EvenDigitSum();
+    }
+
+    @After
+    public void tearDown(){
+        checkPalindrome = null;
+        checkEven = null;
+        evenDigitSum = null;
     }
 
     @Test

@@ -20,6 +20,7 @@ public class CharacterCheckTest {
         characterCheck = null;
     }
 
+//    checks for upper case
     @Test
     public void testCheckCharacterUpperCase() {
         String str = characterCheck.checkCharacter('A');
@@ -27,6 +28,7 @@ public class CharacterCheckTest {
         assertEquals("Upper case letter",str);
     }
 
+//    checks for lower case
     @Test
     public void testCheckCharacterLowerCase() {
         String str = characterCheck.checkCharacter('a');
@@ -34,6 +36,7 @@ public class CharacterCheckTest {
         assertEquals("Lower case letter",str);
     }
 
+//    check digit
     @Test
     public void testCheckCharacterDigit() {
         String str = characterCheck.checkCharacter('6');
@@ -41,6 +44,7 @@ public class CharacterCheckTest {
         assertEquals("Digit",str);
     }
 
+//    chack special character
     @Test
     public void testCheckCharacterSpecialCharacter() {
         String str = characterCheck.checkCharacter('&');
@@ -48,6 +52,7 @@ public class CharacterCheckTest {
         assertEquals("Special characters",str);
     }
 
+//    check space
     @Test
     public void testCheckCharacterSpace() {
         String str = characterCheck.checkCharacter(' ');

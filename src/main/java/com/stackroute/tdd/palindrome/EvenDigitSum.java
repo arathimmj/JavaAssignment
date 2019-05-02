@@ -3,6 +3,8 @@ package com.stackroute.tdd.palindrome;
 import com.stackroute.tdd.palindrome.CheckEven;
 
 public class EvenDigitSum {
+
+    //find the sum of weven digits
     public int findEvenNoSum(int num){
         CheckEven checkEven = new CheckEven();
         int temp = num, op,sum = 0;

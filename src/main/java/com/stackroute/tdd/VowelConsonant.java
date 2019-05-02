@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 
 public class VowelConsonant {
 
+//    make a string that has vowel or consonant for each letter of the string
     public String checkVowelConsonant(String str){
 
         String result = "";

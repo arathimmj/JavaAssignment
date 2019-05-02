@@ -20,6 +20,7 @@ public class PatternPrintingTest {
         patternPrinting = null;
     }
 
+//    Print the pattern that is expected
     @Test
     public void testPrintPattern(){
 
@@ -28,6 +29,7 @@ public class PatternPrintingTest {
         assertEquals(" 1 2 2 3 3 3 4 4 4 4 5 5 5 5 5 6 6 6 6 6 6", str);
     }
 
+//    Print the pattern with 0 as input
     @Test
     public void testPrintPatternWithLimit0(){
 

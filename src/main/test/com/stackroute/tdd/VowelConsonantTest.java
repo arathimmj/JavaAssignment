@@ -20,6 +20,7 @@ public class VowelConsonantTest {
         vowelConsonant = null;
     }
 
+//    Test if the string returned is correct for the vowel and consonant allocation
     @Test
     public void checkVowelOrConsonant() {
 
@@ -28,6 +29,7 @@ public class VowelConsonantTest {
         assertEquals(" Consonant Consonant Vowel Consonant Consonant Consonant Vowel Vowel Consonant Vowel",result);
     }
 
+//    Test if a null pointer exception is thrown for null inputs
     @Test(expected = NullPointerException.class)
     public void checkVowelOrConsonantNullPointerException() {
 

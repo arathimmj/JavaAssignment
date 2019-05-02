@@ -34,6 +34,7 @@ public class AscNumAddandCheckTest {
         arrayToNumeral = null;
     }
 
+//    Check for the descending number and if the number is less than 15
     @Test
     public void testAscNumAddAndCheckTestLessThan15() {
 
@@ -50,6 +51,7 @@ public class AscNumAddandCheckTest {
         assertArrayEquals(expectedResult.array,result.array);
     }
 
+//    Check for the descending number and if the number is more than 15
     @Test
     public void testAscNumAddAndCheckTestMoreThan15() {
 
@@ -66,6 +68,7 @@ public class AscNumAddandCheckTest {
         assertArrayEquals(expectedResult.array,result.array);
     }
 
+//    Test if the array is sorted
     @Test
     public void testArraySorting(){
         expectedResult.array = new int[]{8,7,6,5,4};
@@ -77,6 +80,7 @@ public class AscNumAddandCheckTest {
         assertArrayEquals(expectedResult.array,result.array);
     }
 
+//    Test if the array is sorted with an empty array
     @Test
     public void testArraySortingWithEmptyArray(){
         expectedResult.array = new int[]{};
@@ -88,6 +92,7 @@ public class AscNumAddandCheckTest {
         assertArrayEquals(expectedResult.array,result.array);
     }
 
+//    Test the numeral to array conversion
     @Test
     public void testNumeralToArrayConversion(){
         expectedResult.array = new int[]{7,5,8,6,4};
@@ -97,6 +102,7 @@ public class AscNumAddandCheckTest {
         assertArrayEquals(expectedResult.array,result.array);
     }
 
+//    Test numeral to array conversion with 0 as input
     @Test
     public void testNumeralToArrayConversionWith0Input(){
         expectedResult.array = new int[]{0};
@@ -106,6 +112,7 @@ public class AscNumAddandCheckTest {
         assertArrayEquals(expectedResult.array,result.array);
     }
 
+//    Test array to numeral conversion
     @Test
     public void testArrayToNumeralConversion(){
         expectedResult.finalNumber = 46857;

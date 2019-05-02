@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 
 public class TomJerry {
 
+//    if the element is even return jerry else return tom
     public String checkEvenOdd(int num){
         if (num>20 && num<30) {
             if (num%2==0)

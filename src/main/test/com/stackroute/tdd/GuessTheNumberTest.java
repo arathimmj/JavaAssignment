@@ -20,6 +20,7 @@ public class GuessTheNumberTest {
         guessTheNumber = null;
     }
 
+//    Check the match
     @Test
     public void testCheckMatch() throws Exception {
         int min = 0, max = 100;
@@ -46,6 +47,7 @@ public class GuessTheNumberTest {
 
     }
 
+//    Check for the numbers outside the given limit
     @Test
     public void testCheckMatchLessThan0OrGreaterThan100() throws Exception {
 

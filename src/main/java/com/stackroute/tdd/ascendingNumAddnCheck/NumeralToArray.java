@@ -1,7 +1,6 @@
 package com.stackroute.tdd.ascendingNumAddnCheck;
 
-import com.stackroute.tdd.ascendingNumAddnCheck.Result;
-
+//Convert numeral to Array
 public class NumeralToArray {
 
     Result result = new Result();

@@ -19,6 +19,7 @@ public class StringIntegerTest {
         stringInteger = null;
     }
 
+//    Test the output with 0 as input
     @Test
     public void testRepeatStringWith0Test() {
         String str = stringInteger.repeatString("StackRoute", 0);
@@ -26,11 +27,13 @@ public class StringIntegerTest {
         assertEquals("StackRoute", str);
     }
 
+//    Test the output with input out of bounds
     @Test(expected = StringIndexOutOfBoundsException.class)
     public void testRepeatStringWithStringIndexOutOfBoundExceptionTest() {
         String str = stringInteger.repeatString("StackRoute", 30);
     }
 
+//    Test the output with input null
     @Test(expected = NullPointerException.class)
     public void testRepeatStringWithNullPointerExceptionTest() {
         String str = stringInteger.repeatString(null, 3);

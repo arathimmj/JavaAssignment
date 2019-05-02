@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 
 public class ReverseString {
 
+    //reverse a string
     public String reverseString(String str) throws Exception{
 
         String revStr="";
@@ -14,7 +15,6 @@ public class ReverseString {
             len = str.length();
         }
         catch (Exception e){
-            System.out.println("Throwing");
             throw e;
         }
         char[] charArray = str.toCharArray();

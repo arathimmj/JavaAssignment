@@ -20,6 +20,7 @@ public class ReverseStringTest {
         reverseString = null;
     }
 
+//    Test the reverse of the string
     @Test
     public void testReverseString() {
 
@@ -36,6 +37,7 @@ public class ReverseStringTest {
         assertEquals(expectedStr,revStr);
     }
 
+//    Test the reverse of the string with null input
     @Test(expected = NullPointerException.class)
     public void testReverseStringWithNull() throws Exception{
 

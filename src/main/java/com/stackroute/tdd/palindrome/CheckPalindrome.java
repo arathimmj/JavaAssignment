@@ -1,13 +1,13 @@
 package com.stackroute.tdd.palindrome;
 
-import com.stackroute.tdd.palindrome.EvenDigitSum;
-
 public class CheckPalindrome {
 
+//    check if the number is palindrome and checks if the sum of the even digits is greater than 25
     public int  palindromeCheck(int num) {
 
         int temp, newnum = 0, op;
 
+        //reverse the number
         temp = num;
         while(num/10!= 0) {
             op = num%10;
@@ -19,12 +19,12 @@ public class CheckPalindrome {
 
         EvenDigitSum evenDigitSum = new EvenDigitSum();
         if (temp == newnum) {
-            if (evenDigitSum.findEvenNoSum(temp) > 25)
+            if (evenDigitSum.findEvenNoSum(temp) > 25)      //palindrome and sum of even digits is greater than 25
                 return 0;
             else
-                return 1;
+                return 1;       //palindrome and sum of even digits is less than 25
         }
         else
-            return 2;
+            return 2;       //not palindrome
     }
 }

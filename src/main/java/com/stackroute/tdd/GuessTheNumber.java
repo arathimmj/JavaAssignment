@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 
 public class GuessTheNumber {
 
+//    check if the input number is a match
     public   String checkMatch(int guess, int num) throws Exception{
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         if (num < 0 || num > 100){

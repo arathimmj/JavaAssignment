@@ -3,6 +3,8 @@ package com.stackroute.tdd;
 import java.util.Scanner;
 
 public class IntegerTotal {
+
+//    find the total of the numbers entered
     public void findTotal() {
 
         int total = 0;

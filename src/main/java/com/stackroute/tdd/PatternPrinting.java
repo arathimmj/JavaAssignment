@@ -5,6 +5,7 @@ import java.io.InputStreamReader;
 
 public class PatternPrinting {
 
+//    print the number the number of times it denotes
     public String printPattern(int lim){
         int i, j;
 

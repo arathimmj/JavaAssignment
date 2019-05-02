@@ -6,6 +6,7 @@ import java.io.InputStreamReader;
 
 public class StringInteger {
 
+//    print the last n characters of a string n times
     public String repeatString(String str, int num){
         int length = str.length();
 
